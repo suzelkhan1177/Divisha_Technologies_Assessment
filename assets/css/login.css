@@ -1,0 +1,97 @@
+.login-page {
+	width: 360px;
+	padding: 8% 0 0;
+	margin: auto;
+  }
+  .form {
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+  }
+  .form button {
+		margin-top: 10px;
+		border-radius: 20px;
+		border: 1px solid  rgb(56, 253, 56);
+		background-color:  rgb(199, 115, 6);
+		color: #FFFFFF;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 12px 45px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		transition: transform 80ms ease-in;
+	
+  }
+  .form button:hover,.form button:active,.form button:focus {
+	background: #43A047;
+  }
+  .form .message {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+  }
+  .form .message a {
+	color: #4CAF50;
+	text-decoration: none;
+  }
+  .form .register-form {
+	display: none;
+  }
+  
+  body {
+	background: #e68e2a; /* fallback for old browsers */
+	background: #e68e2a;
+	background: linear-gradient(90deg, #ecaf69 0%, , #ecaf69 50%);
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;      
+  }
+
+  span {
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+    
+}
+ p {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.main{
+	margin-top: 20px;
+}
+
+.signup-footer p {
+    color: rgb(25, 24, 24);
+    text-align: center;
+}
+
+.signup-footer p a {
+    color: #2773a5;
+}

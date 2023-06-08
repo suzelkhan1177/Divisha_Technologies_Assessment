@@ -1,0 +1,57 @@
+.dashboard-card {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .button-container {
+    margin-top: 20px;
+  }
+
+  .button-container button {
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .button-container button:last-child {
+    margin-right: 0;
+  }
+
+  form {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  form button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+    body {
+	background: #e68e2a; /* fallback for old browsers */
+	background: #e68e2a;
+	background: linear-gradient(90deg, #ecaf69 0%, , #ecaf69 50%);
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;      
+  }

@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/css/category.css">
+
+<div class="card-container">
+  <div class="card">
+    <h2>Add Store Info</h2>
+    <form action="/dashboard/store-info" method="POST">
+      <label for="address">Address:</label>
+      <input type="text" name="address" id="address" required>
+  
+      <label for="gst">GST:</label>
+      <input type="text" name="gst" id="gst" required>
+  
+      <label for="storeTimings">Store Timings:</label>
+      <input type="text" name="storeTimings" id="storeTimings" required>
+
+      
+      <label for="logo">Logo:</label>
+      <input type="file" id="logo" name="logo" accept="image/*" required>
+  
+      <button type="submit">Save Store Info</button>
+    </form>
+
+    <button onclick="window.location.href='/dashboard'">Back to Dashboard</button>
+  </div>
+
+  <div class="card">
+    <ul>
+      <li>
+        <h3>Address: <%- locals.storeInfo.address %></h3>
+        <h3>GST: <%- locals.storeInfo.gst %></h3>
+        <h3>Logo: <%- locals.storeInfo.logo %></h3>
+        <h3>Store Timing: <%- locals.storeInfo.storeTimings %></h3>
+      </li>
+    </ul>
+  </div>
+</div>

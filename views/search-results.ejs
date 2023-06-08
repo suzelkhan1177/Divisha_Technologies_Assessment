@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/search-results.css">
+
+<% if (results.length > 0) { %>
+<ul>
+    <% results.forEach(invent => { %>
+      <li class="inventory-card">
+        <h3>Inventory</h3>
+        <ul>
+          <li>Category: <%- invent.category %></li>
+          <li>Product Name: <%- invent.productName %></li>
+          <li>MRP: <%- invent.mrp %></li>
+          <li>SP: <%- invent.sp %></li>
+          <li>Quantity: <%- invent.quantity %></li>
+          <li>Images:
+            <ul>
+              <% invent.images.forEach((img) => { %>
+                <li>
+                  <img src="<%= img %>" alt="<%= img %>">
+                </li>
+              <% }) %>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    <% }) %>
+  </ul>
+
+  <% } else { %>
+  <h1>Text Search  Not Present Please Back</h1>
+  <% } %>
+  

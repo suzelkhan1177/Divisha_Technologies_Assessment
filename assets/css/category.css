@@ -1,0 +1,62 @@
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .card label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .card input[type="text"],
+  .card input[type="submit"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .card button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .card button {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #0077a3;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .card ul li {
+    margin-bottom: 10px;
+  }
+  

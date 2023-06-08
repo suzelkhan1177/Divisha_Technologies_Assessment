@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/category.css">
+
+<div class="card-container">
+  <div class="card">
+    <h2>Add Category, Sub Category</h2>
+    <form action="/dashboard/categories" method="POST">
+      <label for="category">Category:</label>
+      <input type="text" name="category" id="category" required>
+
+      <label for="subCategory">Sub Category:</label>
+      <input type="text" name="subCategory" id="subCategory" required>
+
+      <button type="submit">Add Category, Sub Category</button>
+    </form>
+
+    <button onclick="window.location.href='/dashboard'">Back to Dashboard</button>
+  </div>
+
+  <div class="card">
+    <% categories.forEach((cate, index =1) => { %>
+      <ul>
+        <h3>Categories <%= index +1 %></h3>
+        <li>Category: <%- cate.name %></li>
+        <li>Sub Categories: <%- cate.subcategories %></li>
+      </ul>
+    <% }) %>
+  </div>
+</div>

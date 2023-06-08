@@ -1,0 +1,63 @@
+<!-- Add inventory form -->
+<link rel="stylesheet" href="/css/inventory.css" ) />
+
+
+<div class="form-card">
+  <h2>Add Inventory</h2>
+
+  <form action="/search" method="GET">
+    <input type="text" name="query" placeholder="Search for products">
+    <button type="submit">Search</button>
+  </form>
+
+  <form action="/dashboard/inventory" method="POST">
+    <label for="category">Category:</label>
+    <input type="text" name="category" id="category" required>
+
+    <label for="subCategory">Sub Category:</label>
+    <input type="text" name="subCategory" id="subCategory" required>
+
+    <label for="productName">Product Name:</label>
+    <input type="text" name="productName" id="productName" required>
+
+    <label for="mrp">MRP:</label>
+    <input type="number" name="mrp" id="mrp" required>
+
+    <label for="sp">SP:</label>
+    <input type="number" name="sp" id="sp" required>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" name="quantity" id="quantity" required>
+
+    <label for="images">Images:</label>
+    <input type="file" name="images" id="images" multiple required>
+
+    <button type="submit">Add Inventory</button>
+  </form>
+
+  <button onclick="window.location.href='/dashboard'">Back to Dashboard</button>
+</div>
+
+<ul>
+  <% inventory.forEach(invent => { %>
+    <li class="inventory-card">
+      <h3>Inventory</h3>
+      <ul>
+        <li>Category: <%- invent.category %></li>
+        <li>Product Name: <%- invent.productName %></li>
+        <li>MRP: <%- invent.mrp %></li>
+        <li>SP: <%- invent.sp %></li>
+        <li>Quantity: <%- invent.quantity %></li>
+        <li>Images:
+          <ul>
+            <% invent.images.forEach((img) => { %>
+              <li>
+                <img src="<%= img %>" alt="<%= img %>">
+              </li>
+            <% }) %>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  <% }) %>
+</ul>
