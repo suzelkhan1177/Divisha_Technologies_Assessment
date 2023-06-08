@@ -5,7 +5,7 @@ const Seller = require('../models/seller');
 const authMiddleware = require('../config/authMiddleware');
 
 
-
+// Search inventory router using product Name
 router.get('/search', authMiddleware, async (req, res) => {
   const query = req.query.query.trim(); // Get the search query from the request query parameters
 
@@ -17,12 +17,9 @@ router.get('/search', authMiddleware, async (req, res) => {
                 results.push(req.user.inventory[i]);
              }
         }
-        // if (results.length === 0) {
-        //   res.status(400).json({ message: 'Text Serch  Not Present' });
-
-        // } else {
+    
           res.render('search-results', { results });
-        // } 
+     
   } catch (error) {
     res.status(500).json({ message: 'Failed to perform search' });
   }
